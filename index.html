@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Prediction</title>
+</head>
+<body>
+    <h1>Enter your details</h1>
+    <form action="/predict" method="post">
+	<label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender"><br>
+	<label for="CGPA">CGPA:</label>
+        <input type="number"step="any" id="CGPA" name="CGPA"><br>
+	<label for="department">department:</label>
+        <input type="text" id="department" name="department"><br>
+	<label for="internship_experience">internship_experience:</label>
+        <input type="number" id="internship_experience" name="internship_experience"><br>
+	<label for="Aptitude_score">Aptitude_score:</label>
+        <input type="number" id="Aptitude_score" name="Aptitude_score"><br>
+	<label for="Communication_Skill_Score(out_of_10)">Communication Skill Score (out of 10):</label>
+        <input type="number" id="Communication_Skill_Score(out_of_10)" name="Communication_Skill_Score(out_of_10)" required>
+        <br>
+        <label for="skills">Skills (comma separated):</label>
+        <input type="text" id="skills" name="skills"><br>
+        <label for="company">Company:</label>
+        <select id="company" name="company">
+            <option value="Zoho">Zoho</option>
+            <option value="Accenture">Accenture</option>
+            <option value="IBM">IBM</option>
+            <option value="Cognizant">Cognizant</option>
+        </select><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
