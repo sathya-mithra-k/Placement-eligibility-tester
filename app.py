@@ -57,9 +57,6 @@ def preprocess_input(data, company):
 
 def predict_hiring(data, company):
     model = models.get(company)
-    if not model:
-        raise ValueError(f"Model for company '{company}' not found.")
-    
     
     prediction = model.predict(data)
     if prediction == 1:
