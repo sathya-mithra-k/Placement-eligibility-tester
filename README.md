@@ -16,8 +16,8 @@ It analyzes the student's CGPA, skill sets and other marks and compares them wit
 
 ### Dependencies
 
-sklearn
-FLask - 3.0.3 <br/>
+sklearn  <br/>
+Flask - 3.0.3 <br/>
 Pandas - 2.2.1 <br/>
 Numpy - 1.23.5 <br/>
 joblib -  1.3.2 
